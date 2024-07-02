@@ -1,0 +1,95 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background:radial-gradient(rgb(203, 203, 203),rgb(0, 0, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+#title h1{
+    text-align: center;
+    padding: 15px 0px;
+    color: #eeff00;
+    text-shadow: 0px 0px 10px rgb(255, 251, 0);
+}
+#chance {
+    padding: 25px 0px ;
+    color: #12009b;
+}
+#gameboard{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+    margin-top: 25px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px rgb(215, 215, 215);
+    font-weight: 900;
+}
+#gameboard div{
+    width: 70px;
+    height: 120px;
+    background-color: #e5e5f7;
+    cursor: pointer;
+    border: 1px solid rgb(255, 26, 26);
+    opacity: 0.9;
+    background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 15px 15px, linear-gradient(#f8343d 1.2000000000000002px, transparent 1.2000000000000002px) 0 -0.6000000000000001px, linear-gradient(90deg, #fc3333 1.2000000000000002px, #e5e5f7 1.2000000000000002px) -0.6000000000000001px 0;
+    background-size: 30px 30px, 30px 30px, 15px 15px, 15px 15px;   
+    
+}
+#gameboard div>i{
+    font-size: 2.5em;
+    width: 100%;
+    height: 100%;
+    background: #e5e5f7;
+    padding: 40px 0px;
+    text-align: center;
+    color: rgb(200, 0, 0);
+}
+#diff-level{
+    padding-top: .5rem;
+    color: #ff58db;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px black;
+}
+#restart-btn{
+    padding: .5rem 1rem;
+    margin: .5rem 0;
+    font-weight: 600;
+    background-color: #000000;
+    border: 1px solid transparent;
+    color: #ffffff;
+    transition: all .2s ease;
+}
+#restart-btn:hover{
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    color: #000000;
+}
+
+#difficult-level button{
+    padding: .25rem .5rem;
+    background-color: #00d290;
+    border: none;
+    border-radius: .25rem;
+    margin: .25rem .5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#difficult-level button:hover{
+    scale: 1.1;
+}
+
+#difficult-level button.active{
+    background-color: #00ffae;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/ff9ad2e34b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="title">
+        <h1>Memory Game</h1>
+    </div>
+    <div id="difficult-level">
+        <button type="button" onclick="restartGame(20)">Easy</button>
+        <button type="button" onclick="restartGame(15)">Medium</button>
+        <button type="button" onclick="restartGame(10)">Hard</button>
+    </div>
+    <div>
+        <h3 id="diff-level">Easy</h3>
+    </div>
+    <div id="gameboard">
+
+    </div>
+    <div>
+        <h2 id="chance">Flip Chance : 20</h2>
+    </div>
+    <button type="button" id="restart-btn" onclick="restartGame(0)">RESTART</button>
+</body>
+</html>
